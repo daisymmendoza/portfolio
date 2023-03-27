@@ -22,7 +22,6 @@ body {
     color: #76323F;
     padding: 20px 15px;
     text-decoration: none;
-    /* font-weight: bolder; */
 }
 
 .introSec {
@@ -71,7 +70,6 @@ body {
     grid-area: picture;
     border-radius: 50%;
     width: auto;
-
 }
 
 .projectMainSec {
@@ -88,7 +86,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    /* gap: 7%; */
+    margin-top: -50px;
 }
 
 h3 {
@@ -139,12 +137,6 @@ h3 {
     margin-right: auto;
     padding-top: 100px;
 }
-
-/* #aboutHead {
-    text-align: center;
-    color: #76323F;
-    padding: 50px;
-} */
 
 #aboutImg {
     width: 400px;
@@ -220,4 +212,137 @@ h3 {
 
 #foot a:hover, #footHome a:hover{
     color: rgb(216, 216, 216);
+}
+
+@media screen and (max-width: 850px) {
+    /* Home page */
+    .introSec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #name {
+        font-size: 2.5em;
+    }
+    
+    #nameDesc {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        inline-size: auto;
+        margin-bottom: 15px;
+    }
+    
+    #lrnbtn {
+        width: auto;
+        padding: 10px;
+        font-size: .9em;
+        margin-top: 20px;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+        align-self: center;
+    }
+
+    /* Project page */
+    #projectTitle {
+        font-size: 1.6em;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .projectSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .projects, .projectsHdn {
+        width: 200px;
+        height: 230px;
+        padding: 10px;
+        margin: 25px;
+    }
+
+    .projectsHdn {
+        margin-top: -275px;
+        text-align: center;
+    }
+
+    .projectImg {
+        width: 180px;
+        height: 160px;
+        margin-top: 10px;
+    }
+
+    .desc {
+        margin-top: 10px;
+    }
+
+    /* About page */
+    .aboutSec {
+        width: 80%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    #aboutImg {
+        width: 200px;
+    }
+    
+    #aboutDescLarge {
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    
+    #aboutDesc {
+        font-size: 1em;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    /* Contact page */
+    #contactHead {
+        padding: 30px;
+        font-size: 1.6em;
+    }
+    
+    #contactDesc {
+        color: #565656;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    
+    .contactSec {
+        flex-direction: column;
+        line-height: 25px;
+        margin-top: 25px;
+    }
+    
+    .emailSec, .gitSec {
+        margin-top: 7px;
+        padding: 7px;
+    }
+
+    .contactImg {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .contactSubhead {
+        font-size: 1.1em;
+    }
+    
+    .contactSubdesc {
+        font-size: .9em;
+    }
 }
