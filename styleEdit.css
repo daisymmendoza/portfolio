@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #D7CEC7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: #76323F;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+
+.introSec {
+    display: grid;
+    grid-template-areas:
+    "section picture"
+    "section picture"
+    "section picture";
+    justify-content: center;
+    padding-top: 14%;
+    padding-bottom: 76px;
+}
+
+.introDesc {
+    grid-area: section;
+}
+
+#name {
+    color: #76323F;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+}
+
+#nameDesc {
+    color: #565656;
+    font-size: 1.2em;
+    margin-top: 5px;
+    inline-size: 600px;
+}
+
+#lrnbtn {
+    background-color: #76323F;
+    /* color: #C09F80;*/
+    color: white;
+    width: 115px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.portrait {
+    grid-area: picture;
+    border-radius: 50%;
+    width: auto;
+}
+
+.projectMainSec {
+    background-color: #D7CEC7;
+}
+
+#projectTitle {
+    text-align: center;
+    padding: 50px;
+    color: #76323F;
+}
+
+.projectSec {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+h3 {
+    color: #C09F80;
+}
+
+.projects, .projectsHdn {
+    background-color: #76323F;
+    width: 250px;
+    height: 280px;
+    /*position: absolute;*/
+    padding: 10px;
+    margin: 50px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.projectsHdn {
+    opacity: 0;
+    position: absolute;
+    transition: .5s ease;
+    text-decoration: none;
+    margin-top: -350px;
+    text-align: center;
+}
+
+.projectImg {
+    width: 230px;
+    height: 190px;
+    margin-top: 20px;
+}
+
+.desc {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projectsHdn:hover {
+    opacity: 1;
+}
+
+.aboutSec {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+#aboutImg {
+    width: 400px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+#aboutDescLarge {
+    color: #76323F;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#aboutDesc {
+    color: #565656;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+#contactHead {
+    text-align: center;
+    color: #76323F;
+    padding: 50px;
+}
+
+#contactDesc {
+    color: #565656;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contactSec {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 35px;
+    justify-content: center;
+}
+
+.emailSec, .gitSec {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.contactImg {
+    border-radius: 100%;
+}
+
+.contactSubhead {
+    color: #76323F;
+}
+
+.contactSubdesc {
+    color: #565656;
+}
+
+#foot, #footHome {
+    text-align: center;
+    background-color: #76323F;
+    color: white;
+    padding: 50px;
+    margin-top: 10%;
+}
+
+#foot a, #footHome a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+}
+
+#foot a:hover, #footHome a:hover{
+    color: rgb(216, 216, 216);
+}
+
+@media screen and (max-width: 1050px) {
+    /* Project page */
+    #projectTitle {
+        font-size: 1.6em;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .projectSec {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .projects, .projectsHdn {
+        width: 200px;
+        height: 230px;
+        padding: 10px;
+        margin: 25px;
+    }
+
+    .projectsHdn {
+        margin-top: -275px;
+        text-align: center;
+    }
+
+    .projectImg {
+        width: 180px;
+        height: 160px;
+        margin-top: 10px;
+    }
+
+    .desc {
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    #foot, #footHome {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* Home page */
+    .introSec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #name {
+        font-size: 2.5em;
+    }
+    
+    #nameDesc {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        inline-size: auto;
+        margin-bottom: 15px;
+    }
+    
+    #lrnbtn {
+        width: auto;
+        padding: 10px;
+        font-size: .9em;
+        margin-top: 20px;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+        align-self: center;
+    }
+
+    /* Project page */
+    #projectTitle {
+        font-size: 1.6em;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .projectSec {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .projects, .projectsHdn {
+        width: 200px;
+        height: 230px;
+        padding: 10px;
+        margin: 25px;
+    }
+
+    .projectsHdn {
+        margin-top: -275px;
+        text-align: center;
+    }
+
+    .projectImg {
+        width: 180px;
+        height: 160px;
+        margin-top: 10px;
+    }
+
+    .desc {
+        margin-top: 10px;
+    }
+
+    /* About page */
+    .aboutSec {
+        width: 80%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    #aboutImg {
+        width: 200px;
+    }
+    
+    #aboutDescLarge {
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    
+    #aboutDesc {
+        font-size: 1em;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    /* Contact page */
+    #contactHead {
+        padding: 30px;
+        font-size: 1.6em;
+    }
+    
+    #contactDesc {
+        color: #565656;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    
+    .contactSec {
+        flex-direction: column;
+        line-height: 25px;
+        margin-top: 25px;
+    }
+    
+    .emailSec, .gitSec {
+        margin-top: 7px;
+        padding: 7px;
+    }
+
+    .contactImg {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .contactSubhead {
+        font-size: 1.1em;
+    }
+    
+    .contactSubdesc {
+        font-size: .9em;
+    }
+
+    /* Footer */
+    #foot, #footHome {
+        margin-top: 20%;
+    }
+}
