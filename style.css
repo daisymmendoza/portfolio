@@ -11,6 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Navbar */
 .navbar {
     background-color: white;
     font-size: 1.1em;
@@ -24,6 +25,7 @@ body {
     text-decoration: none;
 }
 
+/* Home page */
 .introSec {
     display: grid;
     grid-template-areas:
@@ -72,6 +74,7 @@ body {
     width: auto;
 }
 
+/* Project page */
 .projectMainSec {
     background-color: #D7CEC7;
 }
@@ -129,6 +132,7 @@ h3 {
     opacity: 1;
 }
 
+/* About page */
 .aboutSec {
     width: 80%;
     display: flex;
@@ -196,6 +200,7 @@ h3 {
     color: #565656;
 }
 
+/* Footer */
 #foot, #footHome {
     text-align: center;
     background-color: #76323F;
@@ -214,6 +219,7 @@ h3 {
     color: rgb(216, 216, 216);
 }
 
+/* Footer media query */
 @media screen and (max-width: 1500px) {
     /* Footer */
     #footHome {
@@ -221,6 +227,7 @@ h3 {
     }
 }
 
+/* Medium size media query */
 @media screen and (max-width: 1050px) {
     /* Project page */
     #projectTitle {
@@ -265,6 +272,7 @@ h3 {
     }
 }
 
+/* Small size media query */
 @media screen and (max-width: 850px) {
     /* Home page */
     .introSec {
