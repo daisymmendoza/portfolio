@@ -214,6 +214,13 @@ h3 {
     color: rgb(216, 216, 216);
 }
 
+@media screen and (max-width: 1500px) {
+    /* Footer */
+    #footHome {
+        margin-top: 20%;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     /* Project page */
     #projectTitle {
@@ -291,43 +298,6 @@ h3 {
         height: 150px;
         margin-bottom: 5px;
         align-self: center;
-    }
-
-    /* Project page */
-    #projectTitle {
-        font-size: 1.6em;
-        padding: 15px;
-        margin-top: 15px;
-    }
-
-    .projectSec {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 0px;
-    }
-
-    .projects, .projectsHdn {
-        width: 200px;
-        height: 230px;
-        padding: 10px;
-        margin: 25px;
-    }
-
-    .projectsHdn {
-        margin-top: -275px;
-        text-align: center;
-    }
-
-    .projectImg {
-        width: 180px;
-        height: 160px;
-        margin-top: 10px;
-    }
-
-    .desc {
-        margin-top: 10px;
     }
 
     /* About page */
